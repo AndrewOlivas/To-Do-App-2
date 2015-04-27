@@ -20,6 +20,7 @@
 						$task_name = $row['task'];
 
 						echo "<li>
+						<span>'.$task_name.' </span>
 						<span>'.$task_name'
 						";
 					}
