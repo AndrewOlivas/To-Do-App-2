@@ -5,9 +5,16 @@
 		TO DO LIST 2.0
 	</title>
 	<link rel="stylesheet" type="text/css" href="css/main">
+	<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+	<nav> 
+  		<a class="link" href="login.php">Login</a>
+  		<a class="link" href="register.php">Register</a>
+  		<a class="link" href="/../php/controller/logout-user.php">Log-out</a>
+	</nav>
 </head>
 <body>
 	<div class="wrap">
+		<div class="task-list">
 		<ul>
 			<?php require("includes/connect.php"); 
 			$mysqli = new mysqli('localhost', 'root', 'root', 'tasks');

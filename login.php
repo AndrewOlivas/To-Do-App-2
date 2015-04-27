@@ -9,6 +9,6 @@
 		</nav>
 </head>
 <?php
-    // pulls files from other folders
+    //pulls files from other folders
     require_once(__DIR__ . "/view/login-form.php");
     require_once(__DIR__ . "/view/footer.php");
