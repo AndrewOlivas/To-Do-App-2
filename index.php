@@ -4,7 +4,8 @@
 	<title>
 		TO DO LIST 2.0
 	</title>
-	<link rel="stylesheet" type="text/css" href="css/main">
+	<link rel="icon" src="">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
 	<nav> 
   		<a class="link" href="login.php">Login</a>
@@ -17,10 +18,10 @@
 		<div class="task-list">
 		<ul>
 			<?php require("includes/connect.php"); 
-			$mysqli = new mysqli('localhost', 'root', 'root', 'tasks');
+			$mysqli = new mysqli('localhost', 'root', 'root', 'todo2');
 			$query = "SELECT * FROM tasks ORDER BY date ASC, time ASC";
 			if ($results = $mysqli->query($query)) {
-				$numrows = $result->num_rows;
+				$numrows = $results->num_rows;
 				if ($numrows>0) {
 					while ($row = $results->fetch_assoc()) {
 						$task_id = $row['id'];

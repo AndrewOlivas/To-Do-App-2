@@ -2,7 +2,7 @@
     require_once(__DIR__ . "/database.php");
     session_start();
     
-    $path = "/to-do-2.0/";
+    $path = "/todoapp2/";
     
     $host = "localhost";
     $username = "root";

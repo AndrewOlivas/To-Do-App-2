@@ -5,8 +5,8 @@
 
 body{
 	font: normal 14px 'Open Sans', Arial, sans-serif;
-	color: #999;
-	background: #f1f1f1;
+	/*color: #999;*/
+	background-image: url("https://slowbuddy.com/wp-content/gallery/plain-background/4567766846.jpg");
 }
 
 .wrap {
